@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailActivity">
+
+        <TextView
+            android:id="@+id/tvNewCases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="New cases"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/tvTotalCases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Total cases"
+            app:layout_constraintStart_toStartOf="@+id/tvNewCases"
+            app:layout_constraintTop_toBottomOf="@+id/tvNewCases" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="84dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.038"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/tvNewDeaths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="New Deaths"
+            app:layout_constraintStart_toStartOf="@+id/tvTotalCases"
+            app:layout_constraintTop_toBottomOf="@+id/tvTotalCases" />
+
+        <TextView
+            android:id="@+id/tvTotalDeaths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Total Deaths"
+            app:layout_constraintStart_toStartOf="@+id/tvNewDeaths"
+            app:layout_constraintTop_toBottomOf="@+id/tvNewDeaths" />
+
+        <TextView
+            android:id="@+id/tvNewRecovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="New recovered"
+            app:layout_constraintStart_toStartOf="@+id/tvTotalDeaths"
+            app:layout_constraintTop_toBottomOf="@+id/tvTotalDeaths" />
+
+        <TextView
+            android:id="@+id/tvTotalRecovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Total recovered"
+            app:layout_constraintStart_toStartOf="@+id/tvNewRecovered"
+            app:layout_constraintTop_toBottomOf="@+id/tvNewRecovered" />
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="26dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="64dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.776"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_search" />
+
+        <TextView
+            android:id="@+id/tvCountryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.173"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNewCaseData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.213"
+            app:layout_constraintStart_toEndOf="@+id/tvNewCases"
+            app:layout_constraintTop_toBottomOf="@+id/tvCountryName" />
+
+        <TextView
+            android:id="@+id/tvTotalCaseData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="148dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.205"
+            app:layout_constraintStart_toEndOf="@+id/tvTotalCases"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNewDeathsData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvTotalCaseData"
+            app:layout_constraintStart_toStartOf="@+id/tvTotalCaseData"
+            app:layout_constraintTop_toBottomOf="@+id/tvTotalCaseData" />
+
+        <TextView
+            android:id="@+id/tvTotalDeathsData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvNewDeathsData"
+            app:layout_constraintStart_toStartOf="@+id/tvNewDeathsData"
+            app:layout_constraintTop_toBottomOf="@+id/tvNewDeathsData" />
+
+        <TextView
+            android:id="@+id/tvNewRecoveredData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvTotalDeathsData"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvTotalDeathsData"
+            app:layout_constraintTop_toBottomOf="@+id/tvTotalDeathsData" />
+
+        <TextView
+            android:id="@+id/tvTotalRecoveredData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tvNewRecoveredData"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvNewRecoveredData"
+            app:layout_constraintTop_toBottomOf="@+id/tvNewRecoveredData"
+            app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
